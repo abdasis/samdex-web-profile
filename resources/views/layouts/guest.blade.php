@@ -20,7 +20,11 @@
 
     <!-- Custom  sCss -->
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/style.css') }}" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    @livewireStyles
+    @stack('css')
 </head>
 
 <body>
@@ -44,6 +48,8 @@
     <!-- Back to top -->
     <a href="#" class="back-to-top" id="back-to-top"> <i class="mdi mdi-chevron-up"> </i> </a>
 
+    @livewireScripts
+    @stack('js')
     <!-- javascript -->
     <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
